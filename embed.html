@@ -5,585 +5,588 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SkelementorCSS Colors</title>
     <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background-color: #fff;
-    color: #111827;
-    padding: 2rem;
-    line-height: 1.5;
-}
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        background-color: #fff;
+        color: #111827;
+        padding: 2rem;
+        line-height: 1.5;
+      }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
 
-/* Explanation Section */
-.explanation-section {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    border-radius: 0.75rem;
-    background-color: rgba(17, 24, 39, 0.05);
-    padding: 2rem;
-    margin-bottom: 3rem;
-    box-shadow: inset 0 0 0 1px rgba(17, 24, 39, 0.05);
-}
-
-.explanation-header {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.explanation-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #111827;
-    margin: 0;
-    line-height: 1.2;
-}
-
-.explanation-description {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #4b5563;
-    margin: 0;
-}
-
-.explanation-description strong {
-    font-weight: 600;
-    color: #111827;
-}
-
-.explanation-demo {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    justify-content: center;
-    overflow: auto;
-    border-radius: 0.5rem;
-    background-color: #fff;
-    outline: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 2rem;
-}
-
-.demo-header {
-    display: grid;
-    grid-template-columns: 5fr 1fr 5fr;
-    gap: 0.75rem;
-    align-items: center;
-    justify-items: center;
-    margin-bottom: 0.5rem;
-}
-
-.demo-section-label {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: #6b7280;
-}
-
-.demo-icon {
-    width: 1rem;
-    height: 1rem;
-    color: #6b7280;
-}
-
-.light-section-label {
-    justify-self: end;
-}
-
-.base-section-label {
-    font-weight: 600;
-    color: #111827;
-    padding: 0 0.5rem;
-}
-
-.dark-section-label {
-    justify-self: start;
-}
-
-.demo-grid {
-    margin: 0 auto;
-    max-width: 36rem;
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    gap: 0.75rem;
-    justify-content: center;
-}
-
-.demo-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.375rem;
-}
-
-.demo-swatch {
-    width: 2.25rem;
-    height: 2.25rem;
-    border-radius: 0.375rem;
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.demo-swatch-base {
-    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.15);
-    transform: scale(1.1);
-}
-
-.demo-item-base {
-    position: relative;
-}
-
-.demo-label-base {
-    font-weight: 600;
-    color: #111827;
-}
-
-.demo-label {
-    text-align: center;
-    font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
-    font-size: 0.75rem;
-    color: #4b5563;
-    margin: 0;
-}
-
-.explanation-code {
-    border-radius: 0.75rem;
-    background-color: #030712;
-    padding: 0.25rem;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-}
-
-.code-block {
-    overflow: auto;
-    border-radius: 0.5rem;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 1.25rem;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-}
-
-.code-block pre {
-    margin: 0;
-    font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    color: #f1f5f9;
-}
-
-.code-block code {
-    display: block;
-}
-
-.code-tag {
-    color: #94a3b8;
-}
-
-.code-attr {
-    color: #cbd5e1;
-}
-
-.code-string {
-    color: #7dd3fc;
-}
-
-.code-comment {
-    color: #64748b;
-    font-style: italic;
-}
-
-@media (min-width: 640px) {
-    .demo-grid {
-        grid-template-columns: repeat(11, 1fr);
-    }
-    
-    .demo-item {
+      /* Explanation Section */
+      .explanation-section {
+        display: flex;
         flex-direction: column;
-    }
-    
-    .demo-swatch {
-        aspect-ratio: 1 / 1;
-        width: 100%;
-    }
-    
-    .demo-header {
-        gap: 1rem;
-    }
-    
-    .explanation-title {
-        font-size: 1.875rem;
-    }
-    
-    .explanation-description {
-        font-size: 1.125rem;
-    }
-}
+        gap: 1.5rem;
+        border-radius: 0.75rem;
+        background-color: rgba(17, 24, 39, 0.05);
+        padding: 2rem;
+        margin-bottom: 3rem;
+        box-shadow: inset 0 0 0 1px rgba(17, 24, 39, 0.05);
+      }
 
-@media (max-width: 639px) {
-    .demo-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
-    .demo-item {
-        flex-direction: row;
-    }
-    
-    .demo-swatch {
+      .explanation-header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .explanation-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #111827;
+        margin: 0;
+        line-height: 1.2;
+      }
+
+      .explanation-description {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #4b5563;
+        margin: 0;
+      }
+
+      .explanation-description strong {
+        font-weight: 600;
+        color: #111827;
+      }
+
+      .explanation-demo {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: center;
+        overflow: auto;
+        border-radius: 0.5rem;
+        background-color: #fff;
+        outline: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 2rem;
+      }
+
+      .demo-header {
+        display: grid;
+        grid-template-columns: 5fr 1fr 5fr;
+        gap: 0.75rem;
+        align-items: center;
+        justify-items: center;
+        margin-bottom: 0.5rem;
+      }
+
+      .demo-section-label {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #6b7280;
+      }
+
+      .demo-icon {
+        width: 1rem;
+        height: 1rem;
+        color: #6b7280;
+      }
+
+      .light-section-label {
+        justify-self: end;
+      }
+
+      .base-section-label {
+        font-weight: 600;
+        color: #111827;
+        padding: 0 0.5rem;
+      }
+
+      .dark-section-label {
+        justify-self: start;
+      }
+
+      .demo-grid {
+        margin: 0 auto;
+        max-width: 36rem;
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        gap: 0.75rem;
+        justify-content: center;
+      }
+
+      .demo-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.375rem;
+      }
+
+      .demo-swatch {
         width: 2.25rem;
         height: 2.25rem;
-    }
-    
-    .demo-header {
-        grid-template-columns: 1fr;
-        gap: 0.75rem;
-    }
-    
-    .light-section-label,
-    .dark-section-label {
-        justify-self: center;
-    }
-    
-    .explanation-section {
-        padding: 1.5rem;
-    }
-}
-
-/* Dark mode support for explanation section */
-@media (prefers-color-scheme: dark) {
-    .explanation-section {
-        background-color: rgba(255, 255, 255, 0.1);
-        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-    }
-    
-    .explanation-title {
-        color: #f9fafb;
-    }
-    
-    .explanation-description {
-        color: #d1d5db;
-    }
-    
-    .explanation-description strong {
-        color: #f9fafb;
-    }
-    
-    .explanation-demo {
-        background-color: rgba(3, 7, 18, 0.5);
-        outline-color: rgba(255, 255, 255, 0.05);
-    }
-    
-    .demo-label {
-        color: #9ca3af;
-    }
-    
-    .demo-label-base {
-        color: #f9fafb;
-    }
-    
-    .demo-section-label {
-        color: #9ca3af;
-    }
-    
-    .base-section-label {
-        color: #f9fafb;
-    }
-    
-    .demo-icon {
-        color: #9ca3af;
-    }
-    
-    .demo-swatch-base {
-        box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
-    }
-    
-    .code-block {
-        background-color: rgba(255, 255, 255, 0.05);
-        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
-    }
-    
-    .code-comment {
-        color: #94a3b8;
-    }
-}
-
-.color-palette {
-    position: relative;
-}
-
-.sticky-header {
-    position: sticky;
-    top: 0;
-    z-index: 9;
-    background-color: #fff;
-    padding: 1rem 0;
-    margin-bottom: 1rem;
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
-    gap: 1rem;
-    align-items: center;
-}
-
-.spacer {
-    width: 100px;
-}
-
-.header-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.icon-header {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    gap: 0.375rem;
-    justify-items: center;
-    align-items: center;
-}
-
-@media (min-width: 640px) {
-    .icon-header {
-        gap: 1rem;
-    }
-}
-
-.icon-cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.icon-cell.light-icon {
-    grid-column: 1 / 6;
-}
-
-.icon-cell.base-spacer {
-    grid-column: 6;
-}
-
-.icon-cell.dark-icon {
-    grid-column: 7 / 12;
-}
-
-.light-icon,
-.dark-icon {
-    color: #6b7280;
-}
-
-.icon {
-    width: 1.25rem;
-    height: 1.25rem;
-}
-
-.shade-labels {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    gap: 0.375rem;
-    justify-items: center;
-    font-weight: 500;
-    font-size: 0.875rem;
-    position: relative;
-}
-
-@media (min-width: 640px) {
-    .shade-labels {
-        gap: 1rem;
-    }
-}
-
-.base-label {
-    padding: 0 1rem;
-    position: relative;
-}
-
-.base-separator {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    border-left: 1px dashed rgba(0, 0, 0, 0.2);
-    pointer-events: none;
-    z-index: 2;
-    height: 100%;
-}
-
-@media (min-width: 640px) {
-    .base-label {
-        padding: 0 1.5rem;
-    }
-    
-    .base-label::before {
-        left: -0.75rem;
-    }
-    
-    .base-label::after {
-        right: -0.75rem;
-    }
-}
-
-.color-grid {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
-    gap: 1rem;
-    align-items: center;
-}
-
-.color-row {
-    display: contents;
-}
-
-.color-name {
-    font-weight: 500;
-    text-transform: capitalize;
-    padding-right: 0;
-    font-size: 0.875rem;
-}
-
-@media (min-width: 640px) {
-    .color-name {
-        padding-right: 3rem;
-    }
-}
-
-.color-swatches {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    gap: 0.375rem;
-    position: relative;
-}
-
-@media (min-width: 640px) {
-    .color-swatches {
-        gap: 1rem;
-    }
-}
-
-.base-swatch {
-    padding: 0 0.375rem;
-    position: relative;
-}
-
-
-@media (min-width: 640px) {
-    .base-swatch {
-        padding: 0 0.5rem;
-    }
-    
-    .base-swatch::before {
-        left: -0.5rem;
-    }
-    
-    .base-swatch::after {
-        right: -0.5rem;
-    }
-}
-
-.color-swatch {
-    aspect-ratio: 1 / 1;
-    width: 100%;
-    border: none;
-    border-radius: 0.125rem;
-    outline: 1px solid rgba(0, 0, 0, 0.1);
-    outline-offset: -1px;
-    cursor: pointer;
-    transition: transform 0.1s ease;
-    position: relative;
-}
-
-@media (min-width: 640px) {
-    .color-swatch {
         border-radius: 0.375rem;
-    }
-}
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+      }
 
-.color-swatch:hover {
-    transform: scale(1.05);
-    z-index: 1;
-}
+      .demo-swatch-base {
+        box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.15);
+        transform: scale(1.1);
+      }
 
-.tooltip {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    pointer-events: none;
-    background-color: rgba(17, 24, 39, 0.9);
-    color: #fff;
-    padding: 0.125rem 0.5rem 0.25rem 0.75rem;
-    border-radius: 9999px;
-    border: 1px solid #111827;
-    font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
-    font-size: 0.75rem;
-    line-height: 1.5;
-    font-weight: 500;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.2s ease 0.1s;
-    will-change: transform, opacity;
-}
+      .demo-item-base {
+        position: relative;
+      }
 
-.tooltip.show {
-    opacity: 1;
-    visibility: visible;
-}
+      .demo-label-base {
+        font-weight: 600;
+        color: #111827;
+      }
 
-.instruction {
-    padding-top: 0.5rem;
-    text-align: center;
-    color: #6b7280;
-    font-style: italic;
-    font-size: 0.875rem;
-    grid-column: 1 / -1;
-    margin-top: 1rem;
-}
+      .demo-label {
+        text-align: center;
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+          "Liberation Mono", monospace;
+        font-size: 0.75rem;
+        color: #4b5563;
+        margin: 0;
+      }
 
-@media (max-width: 640px) {
-    .instruction {
-        display: none;
-    }
-}
-
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-    body {
+      .explanation-code {
+        border-radius: 0.75rem;
         background-color: #030712;
-        color: #f9fafb;
-    }
-    
-    .sticky-header {
-        background-color: #030712;
-    }
-    
-    .color-swatch {
-        outline-color: rgba(255, 255, 255, 0.1);
-    }
-    
-    .instruction {
-        color: #9ca3af;
-    }
-    
-    .light-icon,
-    .dark-icon {
-        color: #9ca3af;
-    }
-    
-    .base-separator {
-        border-left-color: rgba(255, 255, 255, 0.2);
-    }
-}
+        padding: 0.25rem;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+      }
+
+      .code-block {
+        overflow: auto;
+        border-radius: 0.5rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 1.25rem;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+      }
+
+      .code-block pre {
+        margin: 0;
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+          "Liberation Mono", monospace;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        color: #f1f5f9;
+      }
+
+      .code-block code {
+        display: block;
+      }
+
+      .code-tag {
+        color: #94a3b8;
+      }
+
+      .code-attr {
+        color: #cbd5e1;
+      }
+
+      .code-string {
+        color: #7dd3fc;
+      }
+
+      .code-comment {
+        color: #64748b;
+        font-style: italic;
+      }
+
+      @media (min-width: 640px) {
+        .demo-grid {
+          grid-template-columns: repeat(11, 1fr);
+        }
+
+        .demo-item {
+          flex-direction: column;
+        }
+
+        .demo-swatch {
+          aspect-ratio: 1 / 1;
+          width: 100%;
+        }
+
+        .demo-header {
+          gap: 1rem;
+        }
+
+        .explanation-title {
+          font-size: 1.875rem;
+        }
+
+        .explanation-description {
+          font-size: 1.125rem;
+        }
+      }
+
+      @media (max-width: 639px) {
+        .demo-grid {
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        .demo-item {
+          flex-direction: row;
+        }
+
+        .demo-swatch {
+          width: 2.25rem;
+          height: 2.25rem;
+        }
+
+        .demo-header {
+          grid-template-columns: 1fr;
+          gap: 0.75rem;
+        }
+
+        .light-section-label,
+        .dark-section-label {
+          justify-self: center;
+        }
+
+        .explanation-section {
+          padding: 1.5rem;
+        }
+      }
+
+      /* Dark mode support for explanation section */
+      @media (prefers-color-scheme: dark) {
+        .explanation-section {
+          background-color: rgba(255, 255, 255, 0.1);
+          box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+        }
+
+        .explanation-title {
+          color: #f9fafb;
+        }
+
+        .explanation-description {
+          color: #d1d5db;
+        }
+
+        .explanation-description strong {
+          color: #f9fafb;
+        }
+
+        .explanation-demo {
+          background-color: rgba(3, 7, 18, 0.5);
+          outline-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .demo-label {
+          color: #9ca3af;
+        }
+
+        .demo-label-base {
+          color: #f9fafb;
+        }
+
+        .demo-section-label {
+          color: #9ca3af;
+        }
+
+        .base-section-label {
+          color: #f9fafb;
+        }
+
+        .demo-icon {
+          color: #9ca3af;
+        }
+
+        .demo-swatch-base {
+          box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+        }
+
+        .code-block {
+          background-color: rgba(255, 255, 255, 0.05);
+          box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        }
+
+        .code-comment {
+          color: #94a3b8;
+        }
+      }
+
+      .color-palette {
+        position: relative;
+      }
+
+      .sticky-header {
+        position: sticky;
+        top: 0;
+        z-index: 9;
+        background-color: #fff;
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .spacer {
+        width: 100px;
+      }
+
+      .header-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .icon-header {
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        gap: 0.375rem;
+        justify-items: center;
+        align-items: center;
+      }
+
+      @media (min-width: 640px) {
+        .icon-header {
+          gap: 1rem;
+        }
+      }
+
+      .icon-cell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+
+      .icon-cell.light-icon {
+        grid-column: 1 / 6;
+      }
+
+      .icon-cell.base-spacer {
+        grid-column: 6;
+      }
+
+      .icon-cell.dark-icon {
+        grid-column: 7 / 12;
+      }
+
+      .light-icon,
+      .dark-icon {
+        color: #6b7280;
+      }
+
+      .icon {
+        width: 1.25rem;
+        height: 1.25rem;
+      }
+
+      .shade-labels {
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        gap: 0.375rem;
+        justify-items: center;
+        font-weight: 500;
+        font-size: 0.875rem;
+        position: relative;
+      }
+
+      @media (min-width: 640px) {
+        .shade-labels {
+          gap: 1rem;
+        }
+      }
+
+      .base-label {
+        padding: 0 1rem;
+        position: relative;
+      }
+
+      .base-separator {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        border-left: 1px dashed rgba(0, 0, 0, 0.2);
+        pointer-events: none;
+        z-index: 2;
+        height: 100%;
+      }
+
+      @media (min-width: 640px) {
+        .base-label {
+          padding: 0 1.5rem;
+        }
+
+        .base-label::before {
+          left: -0.75rem;
+        }
+
+        .base-label::after {
+          right: -0.75rem;
+        }
+      }
+
+      .color-grid {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .color-row {
+        display: contents;
+      }
+
+      .color-name {
+        font-weight: 500;
+        text-transform: capitalize;
+        padding-right: 0;
+        font-size: 0.875rem;
+      }
+
+      @media (min-width: 640px) {
+        .color-name {
+          padding-right: 3rem;
+        }
+      }
+
+      .color-swatches {
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        gap: 0.375rem;
+        position: relative;
+      }
+
+      @media (min-width: 640px) {
+        .color-swatches {
+          gap: 1rem;
+        }
+      }
+
+      .base-swatch {
+        padding: 0 0.375rem;
+        position: relative;
+      }
+
+      @media (min-width: 640px) {
+        .base-swatch {
+          padding: 0 0.5rem;
+        }
+
+        .base-swatch::before {
+          left: -0.5rem;
+        }
+
+        .base-swatch::after {
+          right: -0.5rem;
+        }
+      }
+
+      .color-swatch {
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        border: none;
+        border-radius: 0.125rem;
+        outline: 1px solid rgba(0, 0, 0, 0.1);
+        outline-offset: -1px;
+        cursor: pointer;
+        transition: transform 0.1s ease;
+        position: relative;
+      }
+
+      @media (min-width: 640px) {
+        .color-swatch {
+          border-radius: 0.375rem;
+        }
+      }
+
+      .color-swatch:hover {
+        transform: scale(1.05);
+        z-index: 1;
+      }
+
+      .tooltip {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        pointer-events: none;
+        background-color: rgba(17, 24, 39, 0.9);
+        color: #fff;
+        padding: 0.125rem 0.5rem 0.25rem 0.75rem;
+        border-radius: 9999px;
+        border: 1px solid #111827;
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+          "Liberation Mono", monospace;
+        font-size: 0.75rem;
+        line-height: 1.5;
+        font-weight: 500;
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease 0.1s;
+        will-change: transform, opacity;
+      }
+
+      .tooltip.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .instruction {
+        padding-top: 0.5rem;
+        text-align: center;
+        color: #6b7280;
+        font-style: italic;
+        font-size: 0.875rem;
+        grid-column: 1 / -1;
+        margin-top: 1rem;
+      }
+
+      @media (max-width: 640px) {
+        .instruction {
+          display: none;
+        }
+      }
+
+      /* Dark mode support */
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #030712;
+          color: #f9fafb;
+        }
+
+        .sticky-header {
+          background-color: #030712;
+        }
+
+        .color-swatch {
+          outline-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .instruction {
+          color: #9ca3af;
+        }
+
+        .light-icon,
+        .dark-icon {
+          color: #9ca3af;
+        }
+
+        .base-separator {
+          border-left-color: rgba(255, 255, 255, 0.2);
+        }
+      }
     </style>
   </head>
   <body>
@@ -761,568 +764,573 @@ body {
     </div>
 
     <script>
-// Color data extracted from Tailwind CSS
-const colorData = {
-    red: [
-        'oklch(97.1% 0.013 17.38)',
-        'oklch(93.6% 0.032 17.717)',
-        'oklch(88.5% 0.062 18.334)',
-        'oklch(80.8% 0.114 19.571)',
-        'oklch(70.4% 0.191 22.216)',
-        'oklch(63.7% 0.237 25.331)',
-        'oklch(57.7% 0.245 27.325)',
-        'oklch(50.5% 0.213 27.518)',
-        'oklch(44.4% 0.177 26.899)',
-        'oklch(39.6% 0.141 25.723)',
-        'oklch(25.8% 0.092 26.042)'
-    ],
-    orange: [
-        'oklch(98% 0.016 73.684)',
-        'oklch(95.4% 0.038 75.164)',
-        'oklch(90.1% 0.076 70.697)',
-        'oklch(83.7% 0.128 66.29)',
-        'oklch(75% 0.183 55.934)',
-        'oklch(70.5% 0.213 47.604)',
-        'oklch(64.6% 0.222 41.116)',
-        'oklch(55.3% 0.195 38.402)',
-        'oklch(47% 0.157 37.304)',
-        'oklch(40.8% 0.123 38.172)',
-        'oklch(26.6% 0.079 36.259)'
-    ],
-    amber: [
-        'oklch(98.7% 0.022 95.277)',
-        'oklch(96.2% 0.059 95.617)',
-        'oklch(92.4% 0.12 95.746)',
-        'oklch(87.9% 0.169 91.605)',
-        'oklch(82.8% 0.189 84.429)',
-        'oklch(76.9% 0.188 70.08)',
-        'oklch(66.6% 0.179 58.318)',
-        'oklch(55.5% 0.163 48.998)',
-        'oklch(47.3% 0.137 46.201)',
-        'oklch(41.4% 0.112 45.904)',
-        'oklch(27.9% 0.077 45.635)'
-    ],
-    yellow: [
-        'oklch(98.7% 0.026 102.212)',
-        'oklch(97.3% 0.071 103.193)',
-        'oklch(94.5% 0.129 101.54)',
-        'oklch(90.5% 0.182 98.111)',
-        'oklch(85.2% 0.199 91.936)',
-        'oklch(79.5% 0.184 86.047)',
-        'oklch(68.1% 0.162 75.834)',
-        'oklch(55.4% 0.135 66.442)',
-        'oklch(47.6% 0.114 61.907)',
-        'oklch(42.1% 0.095 57.708)',
-        'oklch(28.6% 0.066 53.813)'
-    ],
-    lime: [
-        'oklch(98.6% 0.031 120.757)',
-        'oklch(96.7% 0.067 122.328)',
-        'oklch(93.8% 0.127 124.321)',
-        'oklch(89.7% 0.196 126.665)',
-        'oklch(84.1% 0.238 128.85)',
-        'oklch(76.8% 0.233 130.85)',
-        'oklch(64.8% 0.2 131.684)',
-        'oklch(53.2% 0.157 131.589)',
-        'oklch(45.3% 0.124 130.933)',
-        'oklch(40.5% 0.101 131.063)',
-        'oklch(27.4% 0.072 132.109)'
-    ],
-    green: [
-        'oklch(98.2% 0.018 155.826)',
-        'oklch(96.2% 0.044 156.743)',
-        'oklch(92.5% 0.084 155.995)',
-        'oklch(87.1% 0.15 154.449)',
-        'oklch(79.2% 0.209 151.711)',
-        'oklch(72.3% 0.219 149.579)',
-        'oklch(62.7% 0.194 149.214)',
-        'oklch(52.7% 0.154 150.069)',
-        'oklch(44.8% 0.119 151.328)',
-        'oklch(39.3% 0.095 152.535)',
-        'oklch(26.6% 0.065 152.934)'
-    ],
-    emerald: [
-        'oklch(97.9% 0.021 166.113)',
-        'oklch(95% 0.052 163.051)',
-        'oklch(90.5% 0.093 164.15)',
-        'oklch(84.5% 0.143 164.978)',
-        'oklch(76.5% 0.177 163.223)',
-        'oklch(69.6% 0.17 162.48)',
-        'oklch(59.6% 0.145 163.225)',
-        'oklch(50.8% 0.118 165.612)',
-        'oklch(43.2% 0.095 166.913)',
-        'oklch(37.8% 0.077 168.94)',
-        'oklch(26.2% 0.051 172.552)'
-    ],
-    teal: [
-        'oklch(98.4% 0.014 180.72)',
-        'oklch(95.3% 0.051 180.801)',
-        'oklch(91% 0.096 180.426)',
-        'oklch(85.5% 0.138 181.071)',
-        'oklch(77.7% 0.152 181.912)',
-        'oklch(70.4% 0.14 182.503)',
-        'oklch(60% 0.118 184.704)',
-        'oklch(51.1% 0.096 186.391)',
-        'oklch(43.7% 0.078 188.216)',
-        'oklch(38.6% 0.063 188.416)',
-        'oklch(27.7% 0.046 192.524)'
-    ],
-    cyan: [
-        'oklch(98.4% 0.019 200.873)',
-        'oklch(95.6% 0.045 203.388)',
-        'oklch(91.7% 0.08 205.041)',
-        'oklch(86.5% 0.127 207.078)',
-        'oklch(78.9% 0.154 211.53)',
-        'oklch(71.5% 0.143 215.221)',
-        'oklch(60.9% 0.126 221.723)',
-        'oklch(52% 0.105 223.128)',
-        'oklch(45% 0.085 224.283)',
-        'oklch(39.8% 0.07 227.392)',
-        'oklch(30.2% 0.056 229.695)'
-    ],
-    sky: [
-        'oklch(97.7% 0.013 236.62)',
-        'oklch(95.1% 0.026 236.824)',
-        'oklch(90.1% 0.058 230.902)',
-        'oklch(82.8% 0.111 230.318)',
-        'oklch(74.6% 0.16 232.661)',
-        'oklch(68.5% 0.169 237.323)',
-        'oklch(58.8% 0.158 241.966)',
-        'oklch(50% 0.134 242.749)',
-        'oklch(44.3% 0.11 240.79)',
-        'oklch(39.1% 0.09 240.876)',
-        'oklch(29.3% 0.066 243.157)'
-    ],
-    blue: [
-        'oklch(97% 0.014 254.604)',
-        'oklch(93.2% 0.032 255.585)',
-        'oklch(88.2% 0.059 254.128)',
-        'oklch(80.9% 0.105 251.813)',
-        'oklch(70.7% 0.165 254.624)',
-        'oklch(62.3% 0.214 259.815)',
-        'oklch(54.6% 0.245 262.881)',
-        'oklch(48.8% 0.243 264.376)',
-        'oklch(42.4% 0.199 265.638)',
-        'oklch(37.9% 0.146 265.522)',
-        'oklch(28.2% 0.091 267.935)'
-    ],
-    indigo: [
-        'oklch(96.2% 0.018 272.314)',
-        'oklch(93% 0.034 272.788)',
-        'oklch(87% 0.065 274.039)',
-        'oklch(78.5% 0.115 274.713)',
-        'oklch(67.3% 0.182 276.935)',
-        'oklch(58.5% 0.233 277.117)',
-        'oklch(51.1% 0.262 276.966)',
-        'oklch(45.7% 0.24 277.023)',
-        'oklch(39.8% 0.195 277.366)',
-        'oklch(35.9% 0.144 278.697)',
-        'oklch(25.7% 0.09 281.288)'
-    ],
-    violet: [
-        'oklch(96.9% 0.016 293.756)',
-        'oklch(94.3% 0.029 294.588)',
-        'oklch(89.4% 0.057 293.283)',
-        'oklch(81.1% 0.111 293.571)',
-        'oklch(70.2% 0.183 293.541)',
-        'oklch(60.6% 0.25 292.717)',
-        'oklch(54.1% 0.281 293.009)',
-        'oklch(49.1% 0.27 292.581)',
-        'oklch(43.2% 0.232 292.759)',
-        'oklch(38% 0.189 293.745)',
-        'oklch(28.3% 0.141 291.089)'
-    ],
-    purple: [
-        'oklch(97.7% 0.014 308.299)',
-        'oklch(94.6% 0.033 307.174)',
-        'oklch(90.2% 0.063 306.703)',
-        'oklch(82.7% 0.119 306.383)',
-        'oklch(71.4% 0.203 305.504)',
-        'oklch(62.7% 0.265 303.9)',
-        'oklch(55.8% 0.288 302.321)',
-        'oklch(49.6% 0.265 301.924)',
-        'oklch(43.8% 0.218 303.724)',
-        'oklch(38.1% 0.176 304.987)',
-        'oklch(29.1% 0.149 302.717)'
-    ],
-    fuchsia: [
-        'oklch(97.7% 0.017 320.058)',
-        'oklch(95.2% 0.037 318.852)',
-        'oklch(90.3% 0.076 319.62)',
-        'oklch(83.3% 0.145 321.434)',
-        'oklch(74% 0.238 322.16)',
-        'oklch(66.7% 0.295 322.15)',
-        'oklch(59.1% 0.293 322.896)',
-        'oklch(51.8% 0.253 323.949)',
-        'oklch(45.2% 0.211 324.591)',
-        'oklch(40.1% 0.17 325.612)',
-        'oklch(29.3% 0.136 325.661)'
-    ],
-    pink: [
-        'oklch(97.1% 0.014 343.198)',
-        'oklch(94.8% 0.028 342.258)',
-        'oklch(89.9% 0.061 343.231)',
-        'oklch(82.3% 0.12 346.018)',
-        'oklch(71.8% 0.202 349.761)',
-        'oklch(65.6% 0.241 354.308)',
-        'oklch(59.2% 0.249 0.584)',
-        'oklch(52.5% 0.223 3.958)',
-        'oklch(45.9% 0.187 3.815)',
-        'oklch(40.8% 0.153 2.432)',
-        'oklch(28.4% 0.109 3.907)'
-    ],
-    rose: [
-        'oklch(96.9% 0.015 12.422)',
-        'oklch(94.1% 0.03 12.58)',
-        'oklch(89.2% 0.058 10.001)',
-        'oklch(81% 0.117 11.638)',
-        'oklch(71.2% 0.194 13.428)',
-        'oklch(64.5% 0.246 16.439)',
-        'oklch(58.6% 0.253 17.585)',
-        'oklch(51.4% 0.222 16.935)',
-        'oklch(45.5% 0.188 13.697)',
-        'oklch(41% 0.159 10.272)',
-        'oklch(27.1% 0.105 12.094)'
-    ],
-    slate: [
-        'oklch(98.4% 0.003 247.858)',
-        'oklch(96.8% 0.007 247.896)',
-        'oklch(92.9% 0.013 255.508)',
-        'oklch(86.9% 0.022 252.894)',
-        'oklch(70.4% 0.04 256.788)',
-        'oklch(55.4% 0.046 257.417)',
-        'oklch(44.6% 0.043 257.281)',
-        'oklch(37.2% 0.044 257.287)',
-        'oklch(27.9% 0.041 260.031)',
-        'oklch(20.8% 0.042 265.755)',
-        'oklch(12.9% 0.042 264.695)'
-    ],
-    gray: [
-        'oklch(98.5% 0.002 247.839)',
-        'oklch(96.7% 0.003 264.542)',
-        'oklch(92.8% 0.006 264.531)',
-        'oklch(87.2% 0.01 258.338)',
-        'oklch(70.7% 0.022 261.325)',
-        'oklch(55.1% 0.027 264.364)',
-        'oklch(44.6% 0.03 256.802)',
-        'oklch(37.3% 0.034 259.733)',
-        'oklch(27.8% 0.033 256.848)',
-        'oklch(21% 0.034 264.665)',
-        'oklch(13% 0.028 261.692)'
-    ],
-    zinc: [
-        'oklch(98.5% 0 0)',
-        'oklch(96.7% 0.001 286.375)',
-        'oklch(92% 0.004 286.32)',
-        'oklch(87.1% 0.006 286.286)',
-        'oklch(70.5% 0.015 286.067)',
-        'oklch(55.2% 0.016 285.938)',
-        'oklch(44.2% 0.017 285.786)',
-        'oklch(37% 0.013 285.805)',
-        'oklch(27.4% 0.006 286.033)',
-        'oklch(21% 0.006 285.885)',
-        'oklch(14.1% 0.005 285.823)'
-    ],
-    neutral: [
-        'oklch(98.5% 0 0)',
-        'oklch(97% 0 0)',
-        'oklch(92.2% 0 0)',
-        'oklch(87% 0 0)',
-        'oklch(70.8% 0 0)',
-        'oklch(55.6% 0 0)',
-        'oklch(43.9% 0 0)',
-        'oklch(37.1% 0 0)',
-        'oklch(26.9% 0 0)',
-        'oklch(20.5% 0 0)',
-        'oklch(14.5% 0 0)'
-    ],
-    stone: [
-        'oklch(98.5% 0.001 106.423)',
-        'oklch(97% 0.001 106.424)',
-        'oklch(92.3% 0.003 48.717)',
-        'oklch(86.9% 0.005 56.366)',
-        'oklch(70.9% 0.01 56.259)',
-        'oklch(55.3% 0.013 58.071)',
-        'oklch(44.4% 0.011 73.639)',
-        'oklch(37.4% 0.01 67.558)',
-        'oklch(26.8% 0.007 34.298)',
-        'oklch(21.6% 0.006 56.043)',
-        'oklch(14.7% 0.004 49.25)'
-    ]
-};
+      // Color data extracted from Tailwind CSS
+      const colorData = {
+        red: [
+          "oklch(97.1% 0.013 17.38)",
+          "oklch(93.6% 0.032 17.717)",
+          "oklch(88.5% 0.062 18.334)",
+          "oklch(80.8% 0.114 19.571)",
+          "oklch(70.4% 0.191 22.216)",
+          "oklch(63.7% 0.237 25.331)",
+          "oklch(57.7% 0.245 27.325)",
+          "oklch(50.5% 0.213 27.518)",
+          "oklch(44.4% 0.177 26.899)",
+          "oklch(39.6% 0.141 25.723)",
+          "oklch(25.8% 0.092 26.042)",
+        ],
+        orange: [
+          "oklch(98% 0.016 73.684)",
+          "oklch(95.4% 0.038 75.164)",
+          "oklch(90.1% 0.076 70.697)",
+          "oklch(83.7% 0.128 66.29)",
+          "oklch(75% 0.183 55.934)",
+          "oklch(70.5% 0.213 47.604)",
+          "oklch(64.6% 0.222 41.116)",
+          "oklch(55.3% 0.195 38.402)",
+          "oklch(47% 0.157 37.304)",
+          "oklch(40.8% 0.123 38.172)",
+          "oklch(26.6% 0.079 36.259)",
+        ],
+        amber: [
+          "oklch(98.7% 0.022 95.277)",
+          "oklch(96.2% 0.059 95.617)",
+          "oklch(92.4% 0.12 95.746)",
+          "oklch(87.9% 0.169 91.605)",
+          "oklch(82.8% 0.189 84.429)",
+          "oklch(76.9% 0.188 70.08)",
+          "oklch(66.6% 0.179 58.318)",
+          "oklch(55.5% 0.163 48.998)",
+          "oklch(47.3% 0.137 46.201)",
+          "oklch(41.4% 0.112 45.904)",
+          "oklch(27.9% 0.077 45.635)",
+        ],
+        yellow: [
+          "oklch(98.7% 0.026 102.212)",
+          "oklch(97.3% 0.071 103.193)",
+          "oklch(94.5% 0.129 101.54)",
+          "oklch(90.5% 0.182 98.111)",
+          "oklch(85.2% 0.199 91.936)",
+          "oklch(79.5% 0.184 86.047)",
+          "oklch(68.1% 0.162 75.834)",
+          "oklch(55.4% 0.135 66.442)",
+          "oklch(47.6% 0.114 61.907)",
+          "oklch(42.1% 0.095 57.708)",
+          "oklch(28.6% 0.066 53.813)",
+        ],
+        lime: [
+          "oklch(98.6% 0.031 120.757)",
+          "oklch(96.7% 0.067 122.328)",
+          "oklch(93.8% 0.127 124.321)",
+          "oklch(89.7% 0.196 126.665)",
+          "oklch(84.1% 0.238 128.85)",
+          "oklch(76.8% 0.233 130.85)",
+          "oklch(64.8% 0.2 131.684)",
+          "oklch(53.2% 0.157 131.589)",
+          "oklch(45.3% 0.124 130.933)",
+          "oklch(40.5% 0.101 131.063)",
+          "oklch(27.4% 0.072 132.109)",
+        ],
+        green: [
+          "oklch(98.2% 0.018 155.826)",
+          "oklch(96.2% 0.044 156.743)",
+          "oklch(92.5% 0.084 155.995)",
+          "oklch(87.1% 0.15 154.449)",
+          "oklch(79.2% 0.209 151.711)",
+          "oklch(72.3% 0.219 149.579)",
+          "oklch(62.7% 0.194 149.214)",
+          "oklch(52.7% 0.154 150.069)",
+          "oklch(44.8% 0.119 151.328)",
+          "oklch(39.3% 0.095 152.535)",
+          "oklch(26.6% 0.065 152.934)",
+        ],
+        emerald: [
+          "oklch(97.9% 0.021 166.113)",
+          "oklch(95% 0.052 163.051)",
+          "oklch(90.5% 0.093 164.15)",
+          "oklch(84.5% 0.143 164.978)",
+          "oklch(76.5% 0.177 163.223)",
+          "oklch(69.6% 0.17 162.48)",
+          "oklch(59.6% 0.145 163.225)",
+          "oklch(50.8% 0.118 165.612)",
+          "oklch(43.2% 0.095 166.913)",
+          "oklch(37.8% 0.077 168.94)",
+          "oklch(26.2% 0.051 172.552)",
+        ],
+        teal: [
+          "oklch(98.4% 0.014 180.72)",
+          "oklch(95.3% 0.051 180.801)",
+          "oklch(91% 0.096 180.426)",
+          "oklch(85.5% 0.138 181.071)",
+          "oklch(77.7% 0.152 181.912)",
+          "oklch(70.4% 0.14 182.503)",
+          "oklch(60% 0.118 184.704)",
+          "oklch(51.1% 0.096 186.391)",
+          "oklch(43.7% 0.078 188.216)",
+          "oklch(38.6% 0.063 188.416)",
+          "oklch(27.7% 0.046 192.524)",
+        ],
+        cyan: [
+          "oklch(98.4% 0.019 200.873)",
+          "oklch(95.6% 0.045 203.388)",
+          "oklch(91.7% 0.08 205.041)",
+          "oklch(86.5% 0.127 207.078)",
+          "oklch(78.9% 0.154 211.53)",
+          "oklch(71.5% 0.143 215.221)",
+          "oklch(60.9% 0.126 221.723)",
+          "oklch(52% 0.105 223.128)",
+          "oklch(45% 0.085 224.283)",
+          "oklch(39.8% 0.07 227.392)",
+          "oklch(30.2% 0.056 229.695)",
+        ],
+        sky: [
+          "oklch(97.7% 0.013 236.62)",
+          "oklch(95.1% 0.026 236.824)",
+          "oklch(90.1% 0.058 230.902)",
+          "oklch(82.8% 0.111 230.318)",
+          "oklch(74.6% 0.16 232.661)",
+          "oklch(68.5% 0.169 237.323)",
+          "oklch(58.8% 0.158 241.966)",
+          "oklch(50% 0.134 242.749)",
+          "oklch(44.3% 0.11 240.79)",
+          "oklch(39.1% 0.09 240.876)",
+          "oklch(29.3% 0.066 243.157)",
+        ],
+        blue: [
+          "oklch(97% 0.014 254.604)",
+          "oklch(93.2% 0.032 255.585)",
+          "oklch(88.2% 0.059 254.128)",
+          "oklch(80.9% 0.105 251.813)",
+          "oklch(70.7% 0.165 254.624)",
+          "oklch(62.3% 0.214 259.815)",
+          "oklch(54.6% 0.245 262.881)",
+          "oklch(48.8% 0.243 264.376)",
+          "oklch(42.4% 0.199 265.638)",
+          "oklch(37.9% 0.146 265.522)",
+          "oklch(28.2% 0.091 267.935)",
+        ],
+        indigo: [
+          "oklch(96.2% 0.018 272.314)",
+          "oklch(93% 0.034 272.788)",
+          "oklch(87% 0.065 274.039)",
+          "oklch(78.5% 0.115 274.713)",
+          "oklch(67.3% 0.182 276.935)",
+          "oklch(58.5% 0.233 277.117)",
+          "oklch(51.1% 0.262 276.966)",
+          "oklch(45.7% 0.24 277.023)",
+          "oklch(39.8% 0.195 277.366)",
+          "oklch(35.9% 0.144 278.697)",
+          "oklch(25.7% 0.09 281.288)",
+        ],
+        violet: [
+          "oklch(96.9% 0.016 293.756)",
+          "oklch(94.3% 0.029 294.588)",
+          "oklch(89.4% 0.057 293.283)",
+          "oklch(81.1% 0.111 293.571)",
+          "oklch(70.2% 0.183 293.541)",
+          "oklch(60.6% 0.25 292.717)",
+          "oklch(54.1% 0.281 293.009)",
+          "oklch(49.1% 0.27 292.581)",
+          "oklch(43.2% 0.232 292.759)",
+          "oklch(38% 0.189 293.745)",
+          "oklch(28.3% 0.141 291.089)",
+        ],
+        purple: [
+          "oklch(97.7% 0.014 308.299)",
+          "oklch(94.6% 0.033 307.174)",
+          "oklch(90.2% 0.063 306.703)",
+          "oklch(82.7% 0.119 306.383)",
+          "oklch(71.4% 0.203 305.504)",
+          "oklch(62.7% 0.265 303.9)",
+          "oklch(55.8% 0.288 302.321)",
+          "oklch(49.6% 0.265 301.924)",
+          "oklch(43.8% 0.218 303.724)",
+          "oklch(38.1% 0.176 304.987)",
+          "oklch(29.1% 0.149 302.717)",
+        ],
+        fuchsia: [
+          "oklch(97.7% 0.017 320.058)",
+          "oklch(95.2% 0.037 318.852)",
+          "oklch(90.3% 0.076 319.62)",
+          "oklch(83.3% 0.145 321.434)",
+          "oklch(74% 0.238 322.16)",
+          "oklch(66.7% 0.295 322.15)",
+          "oklch(59.1% 0.293 322.896)",
+          "oklch(51.8% 0.253 323.949)",
+          "oklch(45.2% 0.211 324.591)",
+          "oklch(40.1% 0.17 325.612)",
+          "oklch(29.3% 0.136 325.661)",
+        ],
+        pink: [
+          "oklch(97.1% 0.014 343.198)",
+          "oklch(94.8% 0.028 342.258)",
+          "oklch(89.9% 0.061 343.231)",
+          "oklch(82.3% 0.12 346.018)",
+          "oklch(71.8% 0.202 349.761)",
+          "oklch(65.6% 0.241 354.308)",
+          "oklch(59.2% 0.249 0.584)",
+          "oklch(52.5% 0.223 3.958)",
+          "oklch(45.9% 0.187 3.815)",
+          "oklch(40.8% 0.153 2.432)",
+          "oklch(28.4% 0.109 3.907)",
+        ],
+        rose: [
+          "oklch(96.9% 0.015 12.422)",
+          "oklch(94.1% 0.03 12.58)",
+          "oklch(89.2% 0.058 10.001)",
+          "oklch(81% 0.117 11.638)",
+          "oklch(71.2% 0.194 13.428)",
+          "oklch(64.5% 0.246 16.439)",
+          "oklch(58.6% 0.253 17.585)",
+          "oklch(51.4% 0.222 16.935)",
+          "oklch(45.5% 0.188 13.697)",
+          "oklch(41% 0.159 10.272)",
+          "oklch(27.1% 0.105 12.094)",
+        ],
+        slate: [
+          "oklch(98.4% 0.003 247.858)",
+          "oklch(96.8% 0.007 247.896)",
+          "oklch(92.9% 0.013 255.508)",
+          "oklch(86.9% 0.022 252.894)",
+          "oklch(70.4% 0.04 256.788)",
+          "oklch(55.4% 0.046 257.417)",
+          "oklch(44.6% 0.043 257.281)",
+          "oklch(37.2% 0.044 257.287)",
+          "oklch(27.9% 0.041 260.031)",
+          "oklch(20.8% 0.042 265.755)",
+          "oklch(12.9% 0.042 264.695)",
+        ],
+        gray: [
+          "oklch(98.5% 0.002 247.839)",
+          "oklch(96.7% 0.003 264.542)",
+          "oklch(92.8% 0.006 264.531)",
+          "oklch(87.2% 0.01 258.338)",
+          "oklch(70.7% 0.022 261.325)",
+          "oklch(55.1% 0.027 264.364)",
+          "oklch(44.6% 0.03 256.802)",
+          "oklch(37.3% 0.034 259.733)",
+          "oklch(27.8% 0.033 256.848)",
+          "oklch(21% 0.034 264.665)",
+          "oklch(13% 0.028 261.692)",
+        ],
+        zinc: [
+          "oklch(98.5% 0 0)",
+          "oklch(96.7% 0.001 286.375)",
+          "oklch(92% 0.004 286.32)",
+          "oklch(87.1% 0.006 286.286)",
+          "oklch(70.5% 0.015 286.067)",
+          "oklch(55.2% 0.016 285.938)",
+          "oklch(44.2% 0.017 285.786)",
+          "oklch(37% 0.013 285.805)",
+          "oklch(27.4% 0.006 286.033)",
+          "oklch(21% 0.006 285.885)",
+          "oklch(14.1% 0.005 285.823)",
+        ],
+        neutral: [
+          "oklch(98.5% 0 0)",
+          "oklch(97% 0 0)",
+          "oklch(92.2% 0 0)",
+          "oklch(87% 0 0)",
+          "oklch(70.8% 0 0)",
+          "oklch(55.6% 0 0)",
+          "oklch(43.9% 0 0)",
+          "oklch(37.1% 0 0)",
+          "oklch(26.9% 0 0)",
+          "oklch(20.5% 0 0)",
+          "oklch(14.5% 0 0)",
+        ],
+        stone: [
+          "oklch(98.5% 0.001 106.423)",
+          "oklch(97% 0.001 106.424)",
+          "oklch(92.3% 0.003 48.717)",
+          "oklch(86.9% 0.005 56.366)",
+          "oklch(70.9% 0.01 56.259)",
+          "oklch(55.3% 0.013 58.071)",
+          "oklch(44.4% 0.011 73.639)",
+          "oklch(37.4% 0.01 67.558)",
+          "oklch(26.8% 0.007 34.298)",
+          "oklch(21.6% 0.006 56.043)",
+          "oklch(14.7% 0.004 49.25)",
+        ],
+      };
 
-// Cache for hex conversions
-const hexCache = new Map();
+      // Cache for hex conversions
+      const hexCache = new Map();
 
-// Convert OKLCH to hex using canvas
-function oklchToHex(oklch) {
-    // Check cache first
-    if (hexCache.has(oklch)) {
-        return hexCache.get(oklch);
-    }
-    
-    let hex = '#000000';
-    
-    try {
-        // Create a temporary canvas to get the color
-        const canvas = document.createElement('canvas');
-        canvas.width = 1;
-        canvas.height = 1;
-        const ctx = canvas.getContext('2d');
-        
-        // Set the color using OKLCH
-        ctx.fillStyle = oklch;
-        ctx.fillRect(0, 0, 1, 1);
-        
-        // Get the pixel data
-        const imageData = ctx.getImageData(0, 0, 1, 1);
-        const [r, g, b] = imageData.data;
-        
-        // Convert to hex
-        hex = '#' + [r, g, b].map(x => {
-            const hex = x.toString(16);
-            return hex.length === 1 ? '0' + hex : hex;
-        }).join('').toUpperCase();
-    } catch (e) {
-        // Fallback: try using computed style
+      // Convert OKLCH to hex using canvas
+      function oklchToHex(oklch) {
+        // Check cache first
+        if (hexCache.has(oklch)) {
+          return hexCache.get(oklch);
+        }
+
+        let hex = "#000000";
+
         try {
-            const temp = document.createElement('div');
+          // Create a temporary canvas to get the color
+          const canvas = document.createElement("canvas");
+          canvas.width = 1;
+          canvas.height = 1;
+          const ctx = canvas.getContext("2d");
+
+          // Set the color using OKLCH
+          ctx.fillStyle = oklch;
+          ctx.fillRect(0, 0, 1, 1);
+
+          // Get the pixel data
+          const imageData = ctx.getImageData(0, 0, 1, 1);
+          const [r, g, b] = imageData.data;
+
+          // Convert to hex
+          hex =
+            "#" +
+            [r, g, b]
+              .map((x) => {
+                const hex = x.toString(16);
+                return hex.length === 1 ? "0" + hex : hex;
+              })
+              .join("")
+              .toUpperCase();
+        } catch (e) {
+          // Fallback: try using computed style
+          try {
+            const temp = document.createElement("div");
             temp.style.color = oklch;
-            temp.style.position = 'absolute';
-            temp.style.visibility = 'hidden';
+            temp.style.position = "absolute";
+            temp.style.visibility = "hidden";
             document.body.appendChild(temp);
-            
+
             const computed = window.getComputedStyle(temp).color;
             document.body.removeChild(temp);
-            
+
             const rgb = computed.match(/\d+/g);
             if (rgb && rgb.length >= 3) {
-                const r = parseInt(rgb[0]).toString(16).padStart(2, '0');
-                const g = parseInt(rgb[1]).toString(16).padStart(2, '0');
-                const b = parseInt(rgb[2]).toString(16).padStart(2, '0');
-                hex = `#${r}${g}${b}`.toUpperCase();
+              const r = parseInt(rgb[0]).toString(16).padStart(2, "0");
+              const g = parseInt(rgb[1]).toString(16).padStart(2, "0");
+              const b = parseInt(rgb[2]).toString(16).padStart(2, "0");
+              hex = `#${r}${g}${b}`.toUpperCase();
             }
-        } catch (e2) {
-            console.warn('Could not convert OKLCH to hex:', oklch);
+          } catch (e2) {
+            console.warn("Could not convert OKLCH to hex:", oklch);
+          }
         }
-    }
-    
-    // Cache the result
-    hexCache.set(oklch, hex);
-    return hex;
-}
 
-// Generate color grid
-function generateColorGrid() {
-    const grid = document.getElementById('color-grid');
-    const tooltip = document.getElementById('color-tooltip');
-    
-    Object.keys(colorData).forEach(colorName => {
-        const row = document.createElement('div');
-        row.className = 'color-row';
-        
-        const nameLabel = document.createElement('p');
-        nameLabel.className = 'color-name';
-        nameLabel.textContent = colorName;
-        row.appendChild(nameLabel);
-        
-        const swatches = document.createElement('div');
-        swatches.className = 'color-swatches';
-        
-        colorData[colorName].forEach((oklch, index) => {
-            const swatch = document.createElement('button');
-            swatch.className = 'color-swatch';
+        // Cache the result
+        hexCache.set(oklch, hex);
+        return hex;
+      }
+
+      // Generate color grid
+      function generateColorGrid() {
+        const grid = document.getElementById("color-grid");
+        const tooltip = document.getElementById("color-tooltip");
+
+        Object.keys(colorData).forEach((colorName) => {
+          const row = document.createElement("div");
+          row.className = "color-row";
+
+          const nameLabel = document.createElement("p");
+          nameLabel.className = "color-name";
+          nameLabel.textContent = colorName;
+          row.appendChild(nameLabel);
+
+          const swatches = document.createElement("div");
+          swatches.className = "color-swatches";
+
+          colorData[colorName].forEach((oklch, index) => {
+            const swatch = document.createElement("button");
+            swatch.className = "color-swatch";
             // Add base-swatch class for the 6th swatch (index 5, which is the 500/base shade)
             if (index === 5) {
-                swatch.className += ' base-swatch';
+              swatch.className += " base-swatch";
             }
             swatch.style.backgroundColor = oklch;
-            swatch.setAttribute('data-oklch', oklch);
-            
+            swatch.setAttribute("data-oklch", oklch);
+
             // Convert to hex and store
             const hex = oklchToHex(oklch);
-            swatch.setAttribute('data-hex', hex);
-            
+            swatch.setAttribute("data-hex", hex);
+
             let currentSwatch = null;
-            
+
             // Hover event
-            swatch.addEventListener('mouseenter', (e) => {
-                currentSwatch = swatch;
-                hoveredSwatch = swatch;
-                updateTooltip(swatch, e.shiftKey);
+            swatch.addEventListener("mouseenter", (e) => {
+              currentSwatch = swatch;
+              hoveredSwatch = swatch;
+              updateTooltip(swatch, e.shiftKey);
             });
-            
-            swatch.addEventListener('mouseleave', () => {
-                currentSwatch = null;
-                hoveredSwatch = null;
-                tooltip.classList.remove('show');
+
+            swatch.addEventListener("mouseleave", () => {
+              currentSwatch = null;
+              hoveredSwatch = null;
+              tooltip.classList.remove("show");
             });
-            
+
             // Update tooltip on shift key change while hovering
-            swatch.addEventListener('mousemove', (e) => {
-                if (currentSwatch === swatch) {
-                    updateTooltip(swatch, e.shiftKey);
-                }
+            swatch.addEventListener("mousemove", (e) => {
+              if (currentSwatch === swatch) {
+                updateTooltip(swatch, e.shiftKey);
+              }
             });
-            
+
             function updateTooltip(swatch, isShift) {
-                const oklchValue = swatch.getAttribute('data-oklch');
-                const hexValue = swatch.getAttribute('data-hex');
-                const value = isShift ? hexValue : oklchValue;
-                
-                tooltip.textContent = value;
-                tooltip.classList.add('show');
-                
-                // Force a reflow to get accurate tooltip dimensions
-                void tooltip.offsetWidth;
-                
-                // Position tooltip
-                const rect = swatch.getBoundingClientRect();
-                const tooltipRect = tooltip.getBoundingClientRect();
-                let x = rect.left + (rect.width / 2) - (tooltipRect.width / 2);
-                let y = rect.top - tooltipRect.height - 8;
-                
-                // Keep tooltip within viewport
-                const padding = 8;
-                if (x < padding) x = padding;
-                if (x + tooltipRect.width > window.innerWidth - padding) {
-                    x = window.innerWidth - tooltipRect.width - padding;
-                }
-                if (y < padding) {
-                    // Show below if no room above
-                    y = rect.bottom + 8;
-                }
-                
-                tooltip.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+              const oklchValue = swatch.getAttribute("data-oklch");
+              const hexValue = swatch.getAttribute("data-hex");
+              const value = isShift ? hexValue : oklchValue;
+
+              tooltip.textContent = value;
+              tooltip.classList.add("show");
+
+              // Force a reflow to get accurate tooltip dimensions
+              void tooltip.offsetWidth;
+
+              // Position tooltip
+              const rect = swatch.getBoundingClientRect();
+              const tooltipRect = tooltip.getBoundingClientRect();
+              let x = rect.left + rect.width / 2 - tooltipRect.width / 2;
+              let y = rect.top - tooltipRect.height - 8;
+
+              // Keep tooltip within viewport
+              const padding = 8;
+              if (x < padding) x = padding;
+              if (x + tooltipRect.width > window.innerWidth - padding) {
+                x = window.innerWidth - tooltipRect.width - padding;
+              }
+              if (y < padding) {
+                // Show below if no room above
+                y = rect.bottom + 8;
+              }
+
+              tooltip.style.transform = `translate3d(${x}px, ${y}px, 0)`;
             }
-            
+
             // Click event
-            swatch.addEventListener('click', async (e) => {
-                const isShift = e.shiftKey;
-                const oklchValue = swatch.getAttribute('data-oklch');
-                const hexValue = swatch.getAttribute('data-hex');
-                const value = isShift ? hexValue : oklchValue;
-                
-                try {
-                    await navigator.clipboard.writeText(value);
-                    // Visual feedback
-                    const originalText = tooltip.textContent;
-                    tooltip.textContent = 'Copied!';
-                    setTimeout(() => {
-                        tooltip.textContent = originalText;
-                    }, 500);
-                } catch (err) {
-                    console.error('Failed to copy:', err);
-                }
+            swatch.addEventListener("click", async (e) => {
+              const isShift = e.shiftKey;
+              const oklchValue = swatch.getAttribute("data-oklch");
+              const hexValue = swatch.getAttribute("data-hex");
+              const value = isShift ? hexValue : oklchValue;
+
+              try {
+                await navigator.clipboard.writeText(value);
+                // Visual feedback
+                const originalText = tooltip.textContent;
+                tooltip.textContent = "Copied!";
+                setTimeout(() => {
+                  tooltip.textContent = originalText;
+                }, 500);
+              } catch (err) {
+                console.error("Failed to copy:", err);
+              }
             });
-            
+
             swatches.appendChild(swatch);
+          });
+
+          row.appendChild(swatches);
+          grid.appendChild(row);
         });
-        
-        row.appendChild(swatches);
-        grid.appendChild(row);
-    });
-}
+      }
 
-// Global shift key handler to update tooltip
-let hoveredSwatch = null;
+      // Global shift key handler to update tooltip
+      let hoveredSwatch = null;
 
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Shift' && hoveredSwatch) {
-        const isShift = e.shiftKey;
-        const oklchValue = hoveredSwatch.getAttribute('data-oklch');
-        const hexValue = hoveredSwatch.getAttribute('data-hex');
-        const value = isShift ? hexValue : oklchValue;
-        const tooltip = document.getElementById('color-tooltip');
-        tooltip.textContent = value;
-    }
-});
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Shift" && hoveredSwatch) {
+          const isShift = e.shiftKey;
+          const oklchValue = hoveredSwatch.getAttribute("data-oklch");
+          const hexValue = hoveredSwatch.getAttribute("data-hex");
+          const value = isShift ? hexValue : oklchValue;
+          const tooltip = document.getElementById("color-tooltip");
+          tooltip.textContent = value;
+        }
+      });
 
-document.addEventListener('keyup', (e) => {
-    if (e.key === 'Shift' && hoveredSwatch) {
-        const oklchValue = hoveredSwatch.getAttribute('data-oklch');
-        const tooltip = document.getElementById('color-tooltip');
-        tooltip.textContent = oklchValue;
-    }
-});
+      document.addEventListener("keyup", (e) => {
+        if (e.key === "Shift" && hoveredSwatch) {
+          const oklchValue = hoveredSwatch.getAttribute("data-oklch");
+          const tooltip = document.getElementById("color-tooltip");
+          tooltip.textContent = oklchValue;
+        }
+      });
 
-// Add separator lines around base column
-let leftSeparator = null;
-let rightSeparator = null;
-let resizeTimer = null;
+      // Add separator lines around base column
+      let leftSeparator = null;
+      let rightSeparator = null;
+      let resizeTimer = null;
 
-function addBaseSeparators() {
-    const palette = document.querySelector('.color-palette');
-    
-    // Get the first color row's swatches to determine exact column positions
-    const firstColorRow = document.querySelector('.color-swatches');
-    if (!firstColorRow) return;
-    
-    const swatches = firstColorRow.querySelectorAll('.color-swatch');
-    if (swatches.length < 11) return;
-    
-    // Remove existing separators
-    if (leftSeparator) leftSeparator.remove();
-    if (rightSeparator) rightSeparator.remove();
-    
-    const paletteRect = palette.getBoundingClientRect();
-    
-    // Get the l-1 swatch (index 4) and base swatch (index 5)
-    const l1Swatch = swatches[4];
-    const baseSwatch = swatches[5];
-    const d1Swatch = swatches[6];
-    
-    if (!l1Swatch || !baseSwatch || !d1Swatch) return;
-    
-    const l1Rect = l1Swatch.getBoundingClientRect();
-    const baseRect = baseSwatch.getBoundingClientRect();
-    const d1Rect = d1Swatch.getBoundingClientRect();
-    
-    // Left separator: exactly at the gap between l-1 and base
-    // Position it at the right edge of l-1 plus half the gap
-    const gapLeft = baseRect.left - l1Rect.right;
-    const leftSeparatorPos = (l1Rect.right - paletteRect.left) + (gapLeft / 2);
-    
-    // Right separator: exactly at the gap between base and d-1
-    // Position it at the right edge of base plus half the gap
-    const gapRight = d1Rect.left - baseRect.right;
-    const rightSeparatorPos = (baseRect.right - paletteRect.left) + (gapRight / 2);
-    
-    // Left separator (between l-1 and base)
-    leftSeparator = document.createElement('div');
-    leftSeparator.className = 'base-separator';
-    leftSeparator.style.left = `${leftSeparatorPos}px`;
-    palette.appendChild(leftSeparator);
-    
-    // Right separator (between base and d-1)
-    rightSeparator = document.createElement('div');
-    rightSeparator.className = 'base-separator';
-    rightSeparator.style.left = `${rightSeparatorPos}px`;
-    palette.appendChild(rightSeparator);
-}
+      function addBaseSeparators() {
+        const palette = document.querySelector(".color-palette");
 
-function handleResize() {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-        addBaseSeparators();
-    }, 100);
-}
+        // Get the first color row's swatches to determine exact column positions
+        const firstColorRow = document.querySelector(".color-swatches");
+        if (!firstColorRow) return;
 
-// Initialize on load
-document.addEventListener('DOMContentLoaded', () => {
-    generateColorGrid();
-    // Wait a bit for layout to settle
-    setTimeout(() => {
-        addBaseSeparators();
-        window.addEventListener('resize', handleResize);
-    }, 200);
-    
-    // Also try after a longer delay to ensure everything is rendered
-    setTimeout(() => {
-        addBaseSeparators();
-    }, 500);
-});
+        const swatches = firstColorRow.querySelectorAll(".color-swatch");
+        if (swatches.length < 11) return;
+
+        // Remove existing separators
+        if (leftSeparator) leftSeparator.remove();
+        if (rightSeparator) rightSeparator.remove();
+
+        const paletteRect = palette.getBoundingClientRect();
+
+        // Get the l-1 swatch (index 4) and base swatch (index 5)
+        const l1Swatch = swatches[4];
+        const baseSwatch = swatches[5];
+        const d1Swatch = swatches[6];
+
+        if (!l1Swatch || !baseSwatch || !d1Swatch) return;
+
+        const l1Rect = l1Swatch.getBoundingClientRect();
+        const baseRect = baseSwatch.getBoundingClientRect();
+        const d1Rect = d1Swatch.getBoundingClientRect();
+
+        // Left separator: exactly at the gap between l-1 and base
+        // Position it at the right edge of l-1 plus half the gap
+        const gapLeft = baseRect.left - l1Rect.right;
+        const leftSeparatorPos = l1Rect.right - paletteRect.left + gapLeft / 2;
+
+        // Right separator: exactly at the gap between base and d-1
+        // Position it at the right edge of base plus half the gap
+        const gapRight = d1Rect.left - baseRect.right;
+        const rightSeparatorPos =
+          baseRect.right - paletteRect.left + gapRight / 2;
+
+        // Left separator (between l-1 and base)
+        leftSeparator = document.createElement("div");
+        leftSeparator.className = "base-separator";
+        leftSeparator.style.left = `${leftSeparatorPos}px`;
+        palette.appendChild(leftSeparator);
+
+        // Right separator (between base and d-1)
+        rightSeparator = document.createElement("div");
+        rightSeparator.className = "base-separator";
+        rightSeparator.style.left = `${rightSeparatorPos}px`;
+        palette.appendChild(rightSeparator);
+      }
+
+      function handleResize() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          addBaseSeparators();
+        }, 100);
+      }
+
+      // Initialize on load
+      document.addEventListener("DOMContentLoaded", () => {
+        generateColorGrid();
+        // Wait a bit for layout to settle
+        setTimeout(() => {
+          addBaseSeparators();
+          window.addEventListener("resize", handleResize);
+        }, 200);
+
+        // Also try after a longer delay to ensure everything is rendered
+        setTimeout(() => {
+          addBaseSeparators();
+        }, 500);
+      });
     </script>
   </body>
 </html>
-
